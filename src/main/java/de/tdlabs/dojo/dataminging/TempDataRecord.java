@@ -5,6 +5,9 @@ package de.tdlabs.dojo.dataminging;
  */
 public class TempDataRecord {
 
+	
+	
+	
     public int getDay() {
         return -1;
     }

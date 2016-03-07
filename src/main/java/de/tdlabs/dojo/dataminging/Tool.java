@@ -6,7 +6,16 @@ package de.tdlabs.dojo.dataminging;
 public class Tool {
 
     public TempDataRecord parseEntry(String recordEntry) {
+    	
+    	
     
         return null;
     }
+    
+    private int parseDay(String recordEntry) {
+    	
+    	
+    	return 1;
+    }
+    
 }
