@@ -3,6 +3,8 @@ package de.tdlabs.dojo.dataminging;
 
 import org.junit.Test;
 
+import java.util.List;
+
 import static org.assertj.core.api.Assertions.assertThat;
 
 /**
@@ -24,10 +26,14 @@ public class ToolTest {
 
         Tool tool = new Tool();
 
-        TempDataRecord dataRecord = tool.parseEntry(INPUT_DATA_POINTS_1_ENTRY);
+        List<TempDataRecord> dataRecords = tool.parse(INPUT_DATA_POINTS_1_ENTRY);
 
-        assertThat(dataRecord.getDay()).isEqualTo(1);
-        assertThat(dataRecord.getTempMin()).isEqualTo(59);
-        assertThat(dataRecord.getTempMax()).isEqualTo(88);
+        assertThat(dataRecords).hasSize(1);
+
+        TempDataRecord tempDataRecord = dataRecords.get(0);
+
+        assertThat(tempDataRecord.getDay()).isEqualTo(1);
+        assertThat(tempDataRecord.getTempMin()).isEqualTo(59);
+        assertThat(tempDataRecord.getTempMax()).isEqualTo(88);
     }
 }

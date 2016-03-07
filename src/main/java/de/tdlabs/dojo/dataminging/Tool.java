@@ -1,14 +1,14 @@
 package de.tdlabs.dojo.dataminging;
 
+import java.util.List;
+
 /**
  * Created by tom on 07.03.16.
  */
 public class Tool {
 
-    public TempDataRecord parseEntry(String recordEntry) {
-    	
-    	
-    
+    public List<TempDataRecord> parse(String recordEntry) {
+
         return null;
     }
     
