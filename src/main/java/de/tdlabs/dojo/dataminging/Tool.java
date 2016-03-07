@@ -11,11 +11,14 @@ public class Tool {
 
         return null;
     }
-    
+
     private int parseDay(String recordEntry) {
     	
     	
     	return 1;
     }
-    
+
+    public TempDataRecord parseDataLine(String inputDataLine) {
+        return null;
+    }
 }
